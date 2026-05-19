@@ -68,7 +68,7 @@
 // }
 // console.log(hide_email(emailid))
 
-//6. write a Javascript function to convert a string to abbrevate form
+// 6. write a Javascript function to convert a string to abbrevate form
 // var myname="gopalya samy"
 // function abbrevateform(str){
 //     let splited =str.split(" ");
@@ -196,7 +196,7 @@
 //     return null;
 
 // }
-// console.log(nontrepeatstr("arthik"))
+// console.log(nontrepeatstr("aarthik"))
 // console.log(nontrepeatstr("aarr"))
 
 //18. Write a JavaScript function called findSecondLargest that takes an array of numbers as input and returns the second largest number in the array. If the array has fewer than two unique numbers, return null.
@@ -262,4 +262,37 @@
 // console.log(consecutivenum([1,5,3,2,56,43,4]))
 
 
-console.log("hi")
+//23 given an array moves all zero to the end
+// function movezero(arr){
+//     let nonzero=0;
+//     for(i=0;i<arr.length;i++){
+//         if(arr[i]!==0){
+//             [arr[i],arr[nonzero]]=[arr[nonzero],arr[i]]
+//             nonzero++
+//         }
+//     }
+//     return arr
+// }
+// console.log(movezero([0,3,6,0,3,0]))
+
+//24.find the first non reapeating a string
+// function nonrepchar(str){
+//     let obj={}
+//     for(let char of str){
+//         let demo=char[obj]=(obj[char]||0)+1
+//         console.log(demo)
+
+//     }
+
+// }
+// console.log(nonrepchar("arthik"))
+// console.log(nonrepchar("aarr"))
+
+function mergesort(num1,m,num2,n){
+     let i = m - 1;        // Last actual element in nums1
+  let j = n - 1;        // Last element in nums2
+  let k = m + n - 1; 
+    console.log(i,j,k)
+
+}
+console.log(mergesort([1,2,3,0,0,0],3,[2,5,6],3))
